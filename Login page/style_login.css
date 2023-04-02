@@ -1,0 +1,191 @@
+body {
+background-color: rgb(178, 164, 255);
+font-family: 'Asap', sans-serif;
+}
+
+.box{
+  width: 40%;
+  height: 500px;
+  /*border: 1px solid black;*/
+  margin: 50px;
+  padding: 10px;
+  color: white;
+
+}
+
+.login {
+overflow: hidden;
+background-color: white;
+padding: 40px 30px 30px 30px;
+border-radius: 10px;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 400px;
+transform: translate(-50%, -50%);
+transition: transform 300ms, box-shadow 300ms;
+box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.login::before,
+.login::after {
+content: '';
+position: absolute;
+width: 600px;
+height: 600px;
+border-top-left-radius: 40%;
+border-top-right-radius: 45%;
+border-bottom-left-radius: 35%;
+border-bottom-right-radius: 40%;
+z-index: -1;
+}
+
+.login::before {
+left: 30%;
+bottom: -130%;
+background-color: rgb(253, 247, 195);
+animation: wawes 8s infinite linear;
+}
+
+.login::after {
+left: 45%;
+bottom: -125%;
+background-color:rgb(255, 222, 180);
+animation: wawes 9s infinite;
+}
+
+.login > input {
+font-family: 'Asap', sans-serif;
+display: block;
+border-radius: 5px;
+font-size: 16px;
+background: white;
+width: 100%;
+border: 0;
+padding: 10px 10px;
+margin: 15px -10px;
+}
+
+.login > button {
+font-family: 'Asap', sans-serif;
+cursor: pointer;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+width: 80px;
+border: 0;
+padding: 10px 0;
+margin-top: 10px;
+margin-left: -5px;
+margin-right: 10px;
+border-radius: 5px;
+background-color: rgba(244, 91, 105, 1);
+transition: background-color 300ms;
+}
+
+.login > button:hover {
+background-color: rgba(204, 50, 70, 1);
+}
+
+@keyframes wawes {
+from {
+transform: rotate(0);
+}
+to {
+transform: rotate(360deg);
+}
+}
+
+form{
+  float: left;
+  margin-left: 300px;
+  
+}
+.FP{
+  font-size: small;
+}
+.sign-in{
+  margin: 0;
+}
+.title{
+  font-size: 60px;
+}
+.content{
+  color: antiquewhite;
+  margin-left: 10px;
+}
+/* Style the icons */
+      .icon {
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+      }
+
+      /* YouTube icon */
+     
+
+      .facebook {
+        background-image: url('images/image2.png');
+        background-position: -93px -170px; 
+        width: 52px;
+        height: 52px;
+       
+
+      }
+       .facebook:hover {
+        background-image: url('images/image2.png');
+        background-position: -93px -38px; 
+        width: 52px;
+        height: 52px;
+      }
+
+
+      /* Facebook icon */
+      .youtube {
+        background-image: url('images/image2.png');
+        background-repeat: no-repeat;
+        background-position: -93px -230px;
+        width: 52px;
+        height: 52px;
+        
+      }
+
+      .youtube:hover {
+        background-image: url('images/image2.png');
+        background-repeat: no-repeat;
+        background-position: -93px -98px;
+        width: 52px;
+        height: 52px;
+      }
+
+      /* Instagram icon */
+      .instagram {
+        background-image: url('images/image2.png');
+        background-repeat: no-repeat;
+        background-position: -174px -170px;
+        width: 52px;
+        height: 52px;
+      
+      }
+
+      .instagram:hover {
+        background-image: url('../images/image2.png');
+        background-repeat: no-repeat;
+        background-position: -175px -38px;
+        width: 52px;
+        height: 52px;
+      }
+
+      .link{
+        padding: 5px 10px 5px 10px;
+
+      }
+      footer{
+      
+      height: 59px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background: rgb(255, 222, 180);
+      border-radius: 10px;
+    }
